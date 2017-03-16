@@ -133,6 +133,22 @@ var tag_names = ['code', 'career'];
 
 *Note: Ghost currently does not have a "production" ready feature to easily find your list of tags, so this is the temporary solution until that feature is more broadly supported.*
 
+#### Default Tags in Search
+
+Purely cosmetic, but may wish to change the default tags listed in in Search field.
+
+Open up the `partials/search.hbs` and change the text from:
+
+```html
+<input id="search-field" class="search-field" type="text", name="search", placeholder="git, code, javascript,..." />
+```
+
+with your own tags:
+
+```html
+<input id="search-field" class="search-field" type="text", name="search", placeholder="mytag, anothertag, lasttag,..." />
+```
+
 ### Google Analytics
 
 Go to Ghost Admin panel → `Code Injection` → `Blog Header` and add:
